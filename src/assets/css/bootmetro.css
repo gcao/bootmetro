@@ -8229,6 +8229,11 @@ Progress control. */
   max-height: 150px;
 }
 
+.metro .tile.largesquare {
+  width: 310px;
+  height: 312px;
+}
+
 .metro .tile.squarepeek {
   width: 150px;
   height: 312px;
