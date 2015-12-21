@@ -1,3 +1,7 @@
+#Portal Proof of Concept
+
+Project is a 'skunk works' project designed to demonstrate the POC for a Widget Portal.
+
 # BootMetro
 
 

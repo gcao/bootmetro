@@ -25,7 +25,6 @@ body {
    color: #FFF; /*#847d6b;*/
 }
 
-
 #wrap {
    position:relative; /* needed for footer positioning*/
    margin:0 auto; /* center, not in IE5 */
