@@ -10,7 +10,7 @@
    <!-- Mobile viewport optimized: h5bp.com/viewport -->
    <meta name="viewport" content="width=device-width">
 
-   <title>BootMetro Demo - Hub</title>
+   <title>Vonage Portal Demo</title>
 
    <meta name="robots" content="noindex, nofollow">
    <meta name="description" content="BootMetro : Simple and complete web UI framework to create web apps with Windows 8 Metro user interface." />
@@ -195,47 +195,85 @@
 
                         <div class="tile-column-span-1">
                            <div class="tile squarepeek bg-color-green">
-                              <div style="margin:10px;">
-                                 <div class="text2" style="border-bottom:1px solid white; padding-bottom: 3px;">Call History</div>
-                                 <div class="row" style="margin-left:0px; margin-top:10px;">
-                                    <div class="outgoing" style="vertical-align:middle; line-height:30px;">
-                                      <img style="width:30px; height:30px;" src="assets/img/u127.png">Peter Pan
-                                      <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
-                                    </div>
-                                 </div>
-                                 <div class="row" style="margin-left:0px; margin-top:10px;">
-                                    <div class="incoming" style="">
-                                      (732) 333-4444
-                                      <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
-                                    </div>
-                                 </div>
-                                 <div class="row" style="margin-left:0px; margin-top:10px;">
-                                    <div class="outgoing" style="vertical-align:middle; line-height:30px;">
-                                      <img style="width:30px; height:30px;" src="assets/img/u127.png">Peter Pan
-                                      <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
-                                    </div>
-                                 </div>
-                                 <div class="row" style="margin-left:0px; margin-top:10px;">
-                                    <div class="incoming" style="">
-                                      (732) 333-4444
-                                      <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
-                                    </div>
-                                 </div>
-                                 <div class="row" style="margin-left:0px; margin-top:10px;">
-                                    <div class="outgoing" style="vertical-align:middle; line-height:30px;">
-                                      <img style="width:30px; height:30px;" src="assets/img/u127.png">Peter Pan
-                                      <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
-                                    </div>
-                                 </div>
-                                 <div class="row" style="margin-left:0px; margin-top:10px;">
-                                    <div class="incoming" style="">
-                                      (732) 333-4444
-                                      <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
-                                    </div>
-                                 </div>
-                                 <div class="row" style="position:absolute; bottom:0px; right:0px; display:inline-block; margin:10px;">
-                                   More...
-                                 </div>
+                              <div id="call-history" class="flip-container">
+                                <div class="flipper">
+                                  <div class="front" style="margin:10px; width:130px; height:292px;">
+                                     <div class="text2" style="border-bottom:1px solid white; padding-bottom: 3px;">Call History</div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="outgoing" style="vertical-align:middle; line-height:30px;">
+                                          <img style="width:30px; height:30px;" src="assets/img/u127.png">Peter Pan
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="incoming" style="">
+                                          (732) 333-4444
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="outgoing" style="vertical-align:middle; line-height:30px;">
+                                          <img style="width:30px; height:30px;" src="assets/img/u127.png">Peter Pan
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="incoming" style="">
+                                          (732) 333-4444
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="outgoing" style="vertical-align:middle; line-height:30px;">
+                                          <img style="width:30px; height:30px;" src="assets/img/u127.png">Peter Pan
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="incoming" style="">
+                                          (732) 333-4444
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="float:right; display:inline-block; margin:10px;"
+                                          onclick="document.querySelector('#call-history').classList.toggle('flip')"
+                                     >
+                                       More...
+                                     </div>
+                                  </div>
+                                  <div class="back" style="margin:10px; width:130px; height:292px;">
+                                     <div class="text2" style="border-bottom:1px solid white; padding-bottom: 3px;">Call History</div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="outgoing" style="vertical-align:middle; line-height:30px;">
+                                          <img style="width:30px; height:30px;" src="assets/img/u127.png">Mike Doe
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="incoming" style="">
+                                          (908) 234-5555
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="outgoing" style="vertical-align:middle; line-height:30px;">
+                                          <img style="width:30px; height:30px;" src="assets/img/u127.png">Mike Doe
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;">
+                                        <div class="incoming" style="">
+                                          (908) 234-5555
+                                          <a href="#"><div class="fa fa-phone" style="color:white; font-size:large; margin-top:5px; float:right;"></div></a>
+                                        </div>
+                                     </div>
+                                     <div class="row" style="margin-left:0px; margin-top:10px;"
+                                          onclick="document.querySelector('#call-history').classList.toggle('flip')"
+                                     >
+                                       Back
+                                     </div>
+                                  </div>
+                                </div>
                               </div>
                            </div>
                            <!--<a class="tile squarepeek bg-color-orange" href="#">-->
